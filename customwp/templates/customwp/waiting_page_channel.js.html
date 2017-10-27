@@ -38,6 +38,9 @@
                     $('span#tasks_correct').html(obj.tasks_correct);
                     $('table#box1').empty();
                     $('table#box2').empty();
+                    if (obj.tasks_attepted !== 0) {
+                        $('#answer').val("");
+                    } 
                     $.each(obj.mat1, function (i, row) {
                         var tr = $('<tr>');
                         $.each(row, function (j, cell) {
